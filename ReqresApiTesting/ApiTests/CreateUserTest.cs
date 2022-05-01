@@ -19,7 +19,7 @@ public class CreateUserTest : ApiTestBase
         var response = SendRequestAndGetResponse(request);
         var content = GetResponseContent(response);
         
-        Assert.AreEqual(201, (int)response.StatusCode);
+        Assert.AreEqual(CreatedStatusCode, (int)response.StatusCode);
         Assert.AreEqual(someName, content["name"].ToString(), 
             "Имя пользователя отправленного в запросе != имени созданного пользователя");
         Assert.AreEqual(someJob, content["job"].ToString(),

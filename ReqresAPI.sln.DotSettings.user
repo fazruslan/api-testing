@@ -5,5 +5,6 @@
     &lt;TestId&gt;NUnit3x::790BD2F2-C1F5-4C9D-B91E-57356AC6600D::net6.0::ReqresApiTesting.ApiTests.GetSingleUserTest.GetSingleUserNegativeTesting&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::790BD2F2-C1F5-4C9D-B91E-57356AC6600D::net6.0::ReqresApiTesting.ApiTests.CreateUserTest.CreateUserTesting&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::790BD2F2-C1F5-4C9D-B91E-57356AC6600D::net6.0::ReqresApiTesting.ApiTests.LoginUserTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::790BD2F2-C1F5-4C9D-B91E-57356AC6600D::net6.0::ReqresApiTesting.ApiTests.DeleteUserTest.DeleteUserTesting&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

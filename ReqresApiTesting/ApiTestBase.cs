@@ -6,6 +6,13 @@ namespace ReqresApiTesting;
 public class ApiTestBase
 {
     private static string URI = "https://reqres.in";
+
+    protected const int StatusCodeOk = 200;
+    protected const int BadRequestStatusCode = 400;
+    protected const int CreatedStatusCode = 201;
+    protected const int NotFoundStatusCode = 404;
+    protected const int NoContentStatusCode = 204;
+
     
     protected static RestRequest AddRequestHeaders(RestRequest request)
     {

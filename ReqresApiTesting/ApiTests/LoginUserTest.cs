@@ -24,7 +24,7 @@ public class LoginUserTest : ApiTestBase
         var response = SendRequestAndGetResponse(request);
         var content = GetResponseContent(response);
         
-        Assert.AreEqual(200, (int)response.StatusCode, "Статус код ответа не соответствует ожидаемому");
+        Assert.AreEqual(StatusCodeOk, (int)response.StatusCode, "Статус код ответа не соответствует ожидаемому");
         Assert.IsNotEmpty(content["token"].ToString(), "Token is empty");
     }
 
@@ -38,7 +38,7 @@ public class LoginUserTest : ApiTestBase
         var response = SendRequestAndGetResponse(request);
         var content = GetResponseContent(response);
 
-        Assert.AreEqual(400, (int)response.StatusCode, "Статус код ответа не соответствует ожидаемому");
+        Assert.AreEqual(BadRequestStatusCode, (int)response.StatusCode, "Статус код ответа не соответствует ожидаемому");
         Assert.AreEqual(MissingEmailError, content["error"].ToString(), "Текст ошибки в ответе api != ожидаемому");
     }
     
@@ -52,7 +52,7 @@ public class LoginUserTest : ApiTestBase
         var response = SendRequestAndGetResponse(request);
         var content = GetResponseContent(response);
 
-        Assert.AreEqual(400, (int)response.StatusCode, "Статус код ответа не соответствует ожидаемому");
+        Assert.AreEqual(BadRequestStatusCode, (int)response.StatusCode, "Статус код ответа не соответствует ожидаемому");
         Assert.AreEqual(MissingPasswordError, content["error"].ToString(), "Текст ошибки в ответе api != ожидаемому");
     }
 }

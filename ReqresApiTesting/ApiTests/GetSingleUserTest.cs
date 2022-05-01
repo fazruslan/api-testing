@@ -17,7 +17,7 @@ public class GetSingleUserTest : ApiTestBase
         var response = SendRequestAndGetResponse(request);
         var content = GetResponseContent(response);
 
-        Assert.AreEqual(200, (int)response.StatusCode, "Статус код ответа не соответствует ожидаемому");
+        Assert.AreEqual(StatusCodeOk, (int)response.StatusCode, "Статус код ответа не соответствует ожидаемому");
         Assert.AreEqual(someUserId, (int)content["data"]?["id"], "Данные не по заданному пользователю");
     }
 
@@ -32,7 +32,7 @@ public class GetSingleUserTest : ApiTestBase
         var response = SendRequestAndGetResponse(request);
         var content = GetResponseContent(response);
         
-        Assert.AreEqual(404, (int)response.StatusCode, "Статус код ответа не соответствует ожидаемому");
+        Assert.AreEqual(NotFoundStatusCode, (int)response.StatusCode, "Статус код ответа не соответствует ожидаемому");
         Assert.IsEmpty(content, "Тело ответа не пустое.");
     }
 }
