@@ -410,6 +410,15 @@
           "build/netcoreapp2.1/NUnit3TestAdapter.props": {}
         }
       },
+      "RestSharp/107.3.1-alpha.0.24": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/RestSharp.dll": {}
+        }
+      },
       "System.Collections/4.0.11": {
         "type": "package",
         "dependencies": {
@@ -1813,6 +1822,24 @@
         "build/netcoreapp2.1/testcentric.engine.metadata.dll",
         "nunit3testadapter.4.0.0.nupkg.sha512",
         "nunit3testadapter.nuspec"
+      ]
+    },
+    "RestSharp/107.3.1-alpha.0.24": {
+      "sha512": "OD0z6QDlD2Qx4UNV3UhroNYh/77jJVRcvReSOxP5aAv0vlCOqKVe6TBZXQtR/ffG8/1qdbQbzUXxQj6Ke5oALA==",
+      "type": "package",
+      "path": "restsharp/107.3.1-alpha.0.24",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/RestSharp.dll",
+        "lib/net5.0/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.107.3.1-alpha.0.24.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
       ]
     },
     "System.Collections/4.0.11": {
@@ -3851,6 +3878,7 @@
       "Microsoft.NET.Test.Sdk >= 16.11.0",
       "NUnit >= 3.13.2",
       "NUnit3TestAdapter >= 4.0.0",
+      "RestSharp >= 107.3.1-alpha.0.24",
       "coverlet.collector >= 3.1.0"
     ]
   },
@@ -3902,6 +3930,10 @@
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[4.0.0, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[107.3.1-alpha.0.24, )"
           },
           "coverlet.collector": {
             "target": "Package",

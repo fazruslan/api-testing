@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Lo8d1pLIqomKYNq+Ln//KQFcwU0N03rUm99W5iNLXneqdEye/zvrVd/TV6WvSwpzn8AbCYZYK7PRnTD/ssgvcQ==",
+  "dgSpecHash": "gkxjqOvgom3r5eMM5xx5YDzA3IzHV2RkJ007VW9cNEseh2neXtBWa0ZAy+hkD5bS8hp/aTTro/tOqZ9bZAdUnQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Professional\\RiderProjects\\ReqresAPI\\ReqresApiTesting\\ReqresApiTesting.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\Professional\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\Professional\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
     "C:\\Users\\Professional\\.nuget\\packages\\nunit3testadapter\\4.0.0\\nunit3testadapter.4.0.0.nupkg.sha512",
+    "C:\\Users\\Professional\\.nuget\\packages\\restsharp\\107.3.1-alpha.0.24\\restsharp.107.3.1-alpha.0.24.nupkg.sha512",
     "C:\\Users\\Professional\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",
     "C:\\Users\\Professional\\.nuget\\packages\\system.diagnostics.debug\\4.0.11\\system.diagnostics.debug.4.0.11.nupkg.sha512",
     "C:\\Users\\Professional\\.nuget\\packages\\system.diagnostics.tools\\4.0.1\\system.diagnostics.tools.4.0.1.nupkg.sha512",
