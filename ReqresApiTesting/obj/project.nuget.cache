@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gkxjqOvgom3r5eMM5xx5YDzA3IzHV2RkJ007VW9cNEseh2neXtBWa0ZAy+hkD5bS8hp/aTTro/tOqZ9bZAdUnQ==",
+  "dgSpecHash": "m4WR4T1HLzAK8DUHhe0e6YE2KA0YA/hoiiOWcTv/R9VKviY2oDxO5DDlxtemSBdUobOAJRKpRsmWBcEECF2u9g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Professional\\RiderProjects\\ReqresAPI\\ReqresApiTesting\\ReqresApiTesting.csproj",
+  "projectFilePath": "C:\\Users\\Professional\\source\\repos\\api-testing\\ReqresApiTesting\\ReqresApiTesting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Professional\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\Professional\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

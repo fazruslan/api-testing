@@ -1,10 +1,13 @@
 ﻿using Newtonsoft.Json.Linq;
 using RestSharp;
+using NUnit.Framework;
 
 namespace ReqresApiTesting;
 
 public class ApiTestBase
 {
+   
+     
     private static string URI = "https://reqres.in";
 
     protected const int StatusCodeOk = 200;

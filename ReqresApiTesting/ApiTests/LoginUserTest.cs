@@ -1,7 +1,9 @@
 ﻿using NUnit.Framework;
 using RestSharp;
+using System.Threading;
 
 namespace ReqresApiTesting.ApiTests;
+
 
 public class LoginUserTest : ApiTestBase
 {
@@ -13,6 +15,7 @@ public class LoginUserTest : ApiTestBase
     private const string MissingPasswordError = "Missing password";
     
     [Test]
+    [Parallelizable]
     public void SuccessfulUserLoginTesting()
     {
         
@@ -23,12 +26,15 @@ public class LoginUserTest : ApiTestBase
 
         var response = SendRequestAndGetResponse(request);
         var content = GetResponseContent(response);
-        
+
+        Thread.Sleep(2000);
+
         Assert.AreEqual(StatusCodeOk, (int)response.StatusCode, "Статус код ответа не соответствует ожидаемому");
         Assert.IsNotEmpty(content["token"].ToString(), "Token is empty");
     }
 
     [Test]
+    [Parallelizable]
     public void LoginUserWithMissingEmailTesting()
     {
         RestRequest request = new RestRequest(ApiEndPoint.LoginUser, Method.Post);
@@ -37,12 +43,15 @@ public class LoginUserTest : ApiTestBase
 
         var response = SendRequestAndGetResponse(request);
         var content = GetResponseContent(response);
+        
+        Thread.Sleep(2000);
 
         Assert.AreEqual(BadRequestStatusCode, (int)response.StatusCode, "Статус код ответа не соответствует ожидаемому");
         Assert.AreEqual(MissingEmailError, content["error"].ToString(), "Текст ошибки в ответе api != ожидаемому");
     }
     
     [Test]
+    [Parallelizable]
     public void LoginUserWithMissingPasswordTesting()
     {
         RestRequest request = new RestRequest(ApiEndPoint.LoginUser, Method.Post);
@@ -51,6 +60,8 @@ public class LoginUserTest : ApiTestBase
 
         var response = SendRequestAndGetResponse(request);
         var content = GetResponseContent(response);
+
+        Thread.Sleep(2000);
 
         Assert.AreEqual(BadRequestStatusCode, (int)response.StatusCode, "Статус код ответа не соответствует ожидаемому");
         Assert.AreEqual(MissingPasswordError, content["error"].ToString(), "Текст ошибки в ответе api != ожидаемому");

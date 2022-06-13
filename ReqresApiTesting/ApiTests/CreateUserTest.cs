@@ -1,11 +1,13 @@
 ﻿using NUnit.Framework;
 using RestSharp;
+using System.Threading;
 
 namespace ReqresApiTesting.ApiTests;
 
 public class CreateUserTest : ApiTestBase
 {
     [Test]
+    [Parallelizable]
     public void CreateUserTesting()
     {
         string someName = "someName";
@@ -18,6 +20,8 @@ public class CreateUserTest : ApiTestBase
 
         var response = SendRequestAndGetResponse(request);
         var content = GetResponseContent(response);
+
+        Thread.Sleep(2000);
         
         Assert.AreEqual(CreatedStatusCode, (int)response.StatusCode);
         Assert.AreEqual(someName, content["name"].ToString(), 
